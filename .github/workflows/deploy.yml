@@ -16,7 +16,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH }}
-          script: 
+          script: |
             mkdir newFomGit && cd newFomGit
             eval 'ssh-agent -s'
             ssh-add /root/.ssh/git
